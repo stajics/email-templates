@@ -44,7 +44,7 @@ const
 
 const
   paths = {
-    src   : dir('../src'),
+    src   : dir('../public'),
     build : dir('../build'),
   };
 
