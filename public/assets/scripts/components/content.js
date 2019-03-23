@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import DashboardComponent from './content/DashboardComponent';
 
 class Content extends Component {
   render() {
@@ -6,6 +7,7 @@ class Content extends Component {
       <div className="page-container">
        <main className="main-content bgc-grey-100">
          <div id="mainContent">
+         <DashboardComponent />
          </div>
        </main>
        <footer className="bdT ta-c p-30 lh-0 fsz-sm c-grey-600">
