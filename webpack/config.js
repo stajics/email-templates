@@ -31,6 +31,7 @@ const
     path.join(manifest.paths.src, 'assets', 'scripts', manifest.entries.js),
   ];
 
+console.log(entry+" ==========");
 
 // ---------------
 // @Path Resolving
