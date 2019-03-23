@@ -5,6 +5,9 @@ const
 
 const titles = {
   'index': 'Dashboard',
+  'connections': 'Connections',
+  'emailtemplates': 'Emailtemplates',
+  'emailstats': 'Emailstats',
   'blank': 'Blank',
   'buttons': 'Buttons',
   'calendar': 'Calendar',

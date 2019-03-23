@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Dashboard</title>
+    <title>Emailtemplates</title>
 
     <style>
       #loader {
@@ -516,206 +516,142 @@
         <!-- ### $App Screen Content ### -->
         <main class='main-content bgc-grey-100'>
           <div id='mainContent'>
-            <div class="row gap-20 masonry pos-r">
-              <div class="masonry-sizer col-md-6"></div>
-              <div class="masonry-item  w-100">
-                <div class="row gap-20">
-                  <!-- #Toatl Visits ==================== -->
-                  <div class='col-md-3'>
-                    <div class="layers bd bgc-white p-20">
-                      <div class="layer w-100 mB-10">
-                        <h6 class="lh-1">Total Leads</h6>
-                      </div>
-                      <div class="layer w-100">
-                        <div class="peers ai-sb fxw-nw">
-                          <div class="peer peer-greed">
-                            <span id="sparklinedash"></span>
-                          </div>
-                          <div class="peer">
-                            <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-green-50 c-green-500">+10%</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            <div class="full-container">
+              <div class="email-app">
+              <div class="email-side-nav remain-height ov-h">
+                <div class="h-100 layers">
+                  <div class="p-20 bgc-grey-100 layer w-100">
+                    <a href="/compose" class="btn btn-danger btn-block">New Message</a>
                   </div>
-
-                  <!-- #Total Page Views ==================== -->
-                  <div class='col-md-3'>
-                    <div class="layers bd bgc-white p-20">
-                      <div class="layer w-100 mB-10">
-                        <h6 class="lh-1">Total Emails Opened</h6>
-                      </div>
-                      <div class="layer w-100">
-                        <div class="peers ai-sb fxw-nw">
-                          <div class="peer peer-greed">
-                            <span id="sparklinedash2"></span>
+                  <div class="scrollable pos-r bdT layer w-100 fxg-1">
+                    <ul class="p-20 nav flex-column">
+                      <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link c-grey-800 cH-blue-500 active">
+                          <div class="peers ai-c jc-sb">
+                            <div class="peer peer-greed">
+                              <i class="mR-10 ti-email"></i>
+                              <span>Inbox</span>
+                            </div>
+                            <div class="peer">
+                              <span class="badge badge-pill bgc-deep-purple-50 c-deep-purple-700">+99</span>
+                            </div>
                           </div>
-                          <div class="peer">
-                            <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-red-50 c-red-500">-7%</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link c-grey-800 cH-blue-500">
+                          <div class="peers ai-c jc-sb">
+                            <div class="peer peer-greed">
+                              <i class="mR-10 ti-share"></i>
+                              <span>Sent</span>
+                            </div>
+                            <div class="peer">
+                              <span class="badge badge-pill bgc-green-50 c-green-700">12</span>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                    </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link c-grey-800 cH-blue-500">
+                          <div class="peers ai-c jc-sb">
+                            <div class="peer peer-greed">
+                              <i class="mR-10 ti-star"></i>
+                              <span>Important</span>
+                            </div>
+                            <div class="peer">
+                              <span class="badge badge-pill bgc-blue-50 c-blue-700">3</span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link c-grey-800 cH-blue-500">
+                          <div class="peers ai-c jc-sb">
+                            <div class="peer peer-greed">
+                              <i class="mR-10 ti-file"></i>
+                              <span>Drafts</span>
+                            </div>
+                            <div class="peer">
+                              <span class="badge badge-pill bgc-amber-50 c-amber-700">5</span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link c-grey-800 cH-blue-500">
+                          <div class="peers ai-c jc-sb">
+                            <div class="peer peer-greed">
+                              <i class="mR-10 ti-alert"></i>
+                              <span>Spam</span>
+                            </div>
+                            <div class="peer">
+                              <span class="badge badge-pill bgc-red-50 c-red-700">1</span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link c-grey-800 cH-blue-500">
+                          <div class="peers ai-c jc-sb">
+                            <div class="peer peer-greed">
+                              <i class="mR-10 ti-trash"></i>
+                              <span>Trash</span>
+                            </div>
+                            <div class="peer">
+                              <span class="badge badge-pill bgc-red-50 c-red-700">+99</span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
-
-                  <!-- #Unique Visitors ==================== -->
-                  <div class='col-md-3'>
-                    <div class="layers bd bgc-white p-20">
-                      <div class="layer w-100 mB-10">
-                        <h6 class="lh-1">Unique Leads</h6>
-                      </div>
-                      <div class="layer w-100">
-                        <div class="peers ai-sb fxw-nw">
-                          <div class="peer peer-greed">
-                            <span id="sparklinedash3"></span>
-                          </div>
-                          <div class="peer">
-                            <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-purple-50 c-purple-500">~12%</span>
-                          </div>
-                        </div>
-                      </div>
+                </div>
+              </div>
+              <div class="email-wrapper row remain-height pos-r scrollable bgc-white">
+                <div class="email-content open no-inbox-view">
+                  <div class="email-compose">
+                    <div class="d-n@md+ p-20">
+                      <a class="email-side-toggle c-grey-900 cH-blue-500 td-n" href="javascript:void(0)">
+                        <i class="ti-menu"></i>
+                      </a>
                     </div>
-                  </div>
-
-                  <!-- #Bounce Rate ==================== -->
-                  <div class='col-md-3'>
-                    <div class="layers bd bgc-white p-20">
-                      <div class="layer w-100 mB-10">
-                        <h6 class="lh-1">Email Open Rate</h6>
-                      </div>
-                      <div class="layer w-100">
-                        <div class="peers ai-sb fxw-nw">
-                          <div class="peer peer-greed">
-                            <span id="sparklinedash4"></span>
-                          </div>
-                          <div class="peer">
-                            <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-blue-50 c-blue-500">33%</span>
-                          </div>
+                    <form class="email-compose-body">
+                      <h4 class="c-grey-900 mB-20">Send Message</h4>
+                      <div class="send-header">
+                        <div class="form-group">
+                          <input type="text" class='form-control' placeholder="To">
                         </div>
+                        <div class="form-group">
+                          <input type="text" class='form-control' placeholder="CC">
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" placeholder="Email Subject">
+                        </div>
+                        <div class="form-group">
+                          <textarea name="compose" class="form-control" placeholder="Say Hi..." rows='10'></textarea>
+                        </div>
+                      </div>
+                      <div id="compose-area"></div>
+                      <div class="text-right mrg-top-30">
+                        <button class="btn btn-danger">Send</button>
+                      </div>
+                    </form>
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown button
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="masonry-item row gap-20">
-                <!-- #Monthly Stats ==================== -->
-                <div>
-                  <div class="layers">
-                    <div class="layer w-100 pX-20 pT-20">
-                      <h6 class="lh-1">Monthly Stats</h6>
-                    </div>
-                    <div class="layer w-100 p-20">
-                      <canvas id="line-chart" height="220"></canvas>
-                    </div>
-                    <div class="layer bdT p-20 w-100">
-                      <div class="peers ai-c jc-c gapX-20">
-                        <div class="peer">
-                          <span class="fsz-def fw-600 mR-10 c-grey-800">10% <i class="fa fa-level-up c-green-500"></i></span>
-                          <small class="c-grey-500 fw-600">APPL</small>
-                        </div>
-                        <div class="peer fw-600">
-                          <span class="fsz-def fw-600 mR-10 c-grey-800">2% <i class="fa fa-level-down c-red-500"></i></span>
-                          <small class="c-grey-500 fw-600">Average</small>
-                        </div>
-                        <div class="peer fw-600">
-                          <span class="fsz-def fw-600 mR-10 c-grey-800">15% <i class="fa fa-level-up c-green-500"></i></span>
-                          <small class="c-grey-500 fw-600">Sales</small>
-                        </div>
-                        <div class="peer fw-600">
-                          <span class="fsz-def fw-600 mR-10 c-grey-800">8% <i class="fa fa-level-down c-red-500"></i></span>
-                          <small class="c-grey-500 fw-600">Profit</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
-
-              <div class="masonry-item row gap-20">
-                <!-- #Sales Report ==================== -->
-                <div class="bd bgc-white">
-                  <div class="layers">
-                    <div class="layer w-100 p-20">
-                      <h6 class="lh-1">Sales Report</h6>
-                    </div>
-                    <div class="layer w-100">
-                      <div class="bgc-light-blue-500 c-white p-20">
-                        <div class="peers ai-c jc-sb gap-40">
-                          <div class="peer peer-greed">
-                            <h5>November 2017</h5>
-                            <p class="mB-0">Sales Report</p>
-                          </div>
-                          <div class="peer">
-                            <h3 class="text-right">$6,000</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="table-responsive p-20">
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th class=" bdwT-0">Name</th>
-                              <th class=" bdwT-0">Status</th>
-                              <th class=" bdwT-0">Date</th>
-                              <th class=" bdwT-0">Price</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="fw-600">Item #1 Name</td>
-                              <td><span class="badge bgc-red-50 c-red-700 p-10 lh-0 tt-c badge-pill">Unavailable</span> </td>
-                              <td>Nov 18</td>
-                              <td><span class="text-success">$12</span></td>
-                            </tr>
-                            <tr>
-                              <td class="fw-600">Item #2 Name</td>
-                              <td><span class="badge bgc-deep-purple-50 c-deep-purple-700 p-10 lh-0 tt-c badge-pill">New</span></td>
-                              <td>Nov 19</td>
-                              <td><span class="text-info">$34</span></td>
-                            </tr>
-                            <tr>
-                              <td class="fw-600">Item #3 Name</td>
-                              <td><span class="badge bgc-pink-50 c-pink-700 p-10 lh-0 tt-c badge-pill">New</span></td>
-                              <td>Nov 20</td>
-                              <td><span class="text-danger">-$45</span></td>
-                            </tr>
-                            <tr>
-                              <td class="fw-600">Item #4 Name</td>
-                              <td><span class="badge bgc-green-50 c-green-700 p-10 lh-0 tt-c badge-pill">Unavailable</span></td>
-                              <td>Nov 21</td>
-                              <td><span class="text-success">$65</span></td>
-                            </tr>
-                            <tr>
-                              <td class="fw-600">Item #5 Name</td>
-                              <td><span class="badge bgc-red-50 c-red-700 p-10 lh-0 tt-c badge-pill">Used</span></td>
-                              <td>Nov 22</td>
-                              <td><span class="text-success">$78</span></td>
-                            </tr>
-                            <tr>
-                              <td class="fw-600">Item #6 Name</td>
-                              <td><span class="badge bgc-orange-50 c-orange-700 p-10 lh-0 tt-c badge-pill">Used</span> </td>
-                              <td>Nov 23</td>
-                              <td><span class="text-danger">-$88</span></td>
-                            </tr>
-                            <tr>
-                              <td class="fw-600">Item #7 Name</td>
-                              <td><span class="badge bgc-yellow-50 c-yellow-700 p-10 lh-0 tt-c badge-pill">Old</span></td>
-                              <td>Nov 22</td>
-                              <td><span class="text-success">$56</span></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                       </div>
-                    </div>
-                  </div>
-                  <div class="ta-c bdT w-100 p-20">
-                    <a href="#">Check all the sales</a>
-                  </div>
-                </div>
-              </div>
-
-
+            </div>
+          </div>
         </main>
 
         <!-- ### $App Screen Footer ### -->
