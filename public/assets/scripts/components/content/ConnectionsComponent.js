@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 class ConnectionsComponent extends Component {
   render() {
     return (
-            <div className="page-container">
              <main className="main-content bgc-grey-100">
                <div id="mainContent">
 
@@ -87,10 +86,8 @@ class ConnectionsComponent extends Component {
             </div>
           </div>
 
-
                 </div>
                 </main>
-                </div>
     );
 }
 }

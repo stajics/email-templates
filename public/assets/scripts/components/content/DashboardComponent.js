@@ -4,7 +4,6 @@ class DashboardComponent extends Component {
   render() {
     return (
 
-        <div className="page-container">
          <main className="main-content bgc-grey-100">
            <div id="mainContent">
 
@@ -146,7 +145,6 @@ class DashboardComponent extends Component {
 
       </div>
       </main>
-      </div>
     );
 }
 }

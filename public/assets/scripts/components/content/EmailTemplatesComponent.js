@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 class EmailTemplatesComponent extends Component {
   render() {
     return (
-
-      <div className="page-container">
       <main className="main-content bgc-grey-100">
         <div id="mainContent">
           <div className="full-container">
@@ -135,8 +133,6 @@ class EmailTemplatesComponent extends Component {
           </div>
         </div>
       </main>
-
-      </div>
     );
 }
 }
