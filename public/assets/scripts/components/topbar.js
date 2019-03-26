@@ -8,24 +8,15 @@ return (
         <div className="header-container">
           <ul className="nav-left">
             <li>
-              <a id="sidebar-toggle" className="sidebar-toggle" href="javascript:void(0);">
+              <a id="sidebar-toggle" className="sidebar-toggle">
                 <i className="ti-menu" />
               </a>
-            </li>
-            <li className="search-box">
-              <a className="search-toggle no-pdd-right" href="javascript:void(0);">
-                <i className="search-icon ti-search pdd-right-10" />
-                <i className="search-icon-close ti-close pdd-right-10" />
-              </a>
-            </li>
-            <li className="search-input">
-              <input className="form-control" type="text" placeholder="Search..." />
             </li>
           </ul>
           <ul className="nav-right">
             <li className="notifications dropdown">
               <span className="counter bgc-red">3</span>
-              <a href className="dropdown-toggle no-after" data-toggle="dropdown">
+              <a className="dropdown-toggle no-after" data-toggle="dropdown">
                 <i className="ti-bell" />
               </a>
               <ul className="dropdown-menu">
@@ -36,9 +27,9 @@ return (
                 <li>
                   <ul className="ovY-a pos-r scrollable lis-n p-0 m-0 fsz-sm">
                     <li>
-                      <a href className="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                      <a className="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
                         <div className="peer mR-15">
-                          <img className="w-3r bdrs-50p" src="https://randomuser.me/api/portraits/men/1.jpg" alt />
+                          <img className="w-3r bdrs-50p" src="https://randomuser.me/api/portraits/men/1.jpg" />
                         </div>
                         <div className="peer peer-greed">
                           <span>
@@ -53,9 +44,9 @@ return (
                       </a>
                     </li>
                     <li>
-                      <a href className="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                      <a className="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
                         <div className="peer mR-15">
-                          <img className="w-3r bdrs-50p" src="https://randomuser.me/api/portraits/men/2.jpg" alt />
+                          <img className="w-3r bdrs-50p" src="https://randomuser.me/api/portraits/men/2.jpg" />
                         </div>
                         <div className="peer peer-greed">
                           <span>
@@ -70,9 +61,9 @@ return (
                       </a>
                     </li>
                     <li>
-                      <a href className="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                      <a className="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
                         <div className="peer mR-15">
-                          <img className="w-3r bdrs-50p" src="https://randomuser.me/api/portraits/men/3.jpg" alt />
+                          <img className="w-3r bdrs-50p" src="https://randomuser.me/api/portraits/men/3.jpg" />
                         </div>
                         <div className="peer peer-greed">
                           <span>
@@ -90,14 +81,14 @@ return (
                 </li>
                 <li className="pX-20 pY-15 ta-c bdT">
                   <span>
-                    <a href className="c-grey-600 cH-blue fsz-sm td-n">View All Notifications <i className="ti-angle-right fsz-xs mL-10" /></a>
+                    <a className="c-grey-600 cH-blue fsz-sm td-n">View All Notifications <i className="ti-angle-right fsz-xs mL-10" /></a>
                   </span>
                 </li>
               </ul>
             </li>
             <li className="notifications dropdown">
               <span className="counter bgc-blue">3</span>
-              <a href className="dropdown-toggle no-after" data-toggle="dropdown">
+              <a className="dropdown-toggle no-after" data-toggle="dropdown">
                 <i className="ti-email" />
               </a>
               <ul className="dropdown-menu">
@@ -108,9 +99,9 @@ return (
                 <li>
                   <ul className="ovY-a pos-r scrollable lis-n p-0 m-0 fsz-sm">
                     <li>
-                      <a href className="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                      <a className="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
                         <div className="peer mR-15">
-                          <img className="w-3r bdrs-50p" src="https://randomuser.me/api/portraits/men/1.jpg" alt />
+                          <img className="w-3r bdrs-50p" src="https://randomuser.me/api/portraits/men/1.jpg" />
                         </div>
                         <div className="peer peer-greed">
                           <div>
@@ -130,9 +121,9 @@ return (
                       </a>
                     </li>
                     <li>
-                      <a href className="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                      <a className="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
                         <div className="peer mR-15">
-                          <img className="w-3r bdrs-50p" src="https://randomuser.me/api/portraits/men/2.jpg" alt />
+                          <img className="w-3r bdrs-50p" src="https://randomuser.me/api/portraits/men/2.jpg" />
                         </div>
                         <div className="peer peer-greed">
                           <div>
@@ -152,9 +143,9 @@ return (
                       </a>
                     </li>
                     <li>
-                      <a href className="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                      <a className="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
                         <div className="peer mR-15">
-                          <img className="w-3r bdrs-50p" src="https://randomuser.me/api/portraits/men/3.jpg" alt />
+                          <img className="w-3r bdrs-50p" src="https://randomuser.me/api/portraits/men/3.jpg"   />
                         </div>
                         <div className="peer peer-greed">
                           <div>
@@ -177,15 +168,15 @@ return (
                 </li>
                 <li className="pX-20 pY-15 ta-c bdT">
                   <span>
-                    <a href="email.html" className="c-grey-600 cH-blue fsz-sm td-n">View All Email <i className="fs-xs ti-angle-right mL-10" /></a>
+                    <a className="c-grey-600 cH-blue fsz-sm td-n">View All Email <i className="fs-xs ti-angle-right mL-10" /></a>
                   </span>
                 </li>
               </ul>
             </li>
             <li className="dropdown">
-              <a href className="dropdown-toggle no-after peers fxw-nw ai-c lh-1" data-toggle="dropdown">
+              <a className="dropdown-toggle no-after peers fxw-nw ai-c lh-1" data-toggle="dropdown">
                 <div className="peer mR-10">
-                  <img className="w-2r bdrs-50p" src="https://randomuser.me/api/portraits/men/10.jpg" alt />
+                  <img className="w-2r bdrs-50p" src="https://randomuser.me/api/portraits/men/10.jpg"   />
                 </div>
                 <div className="peer">
                   <span className="fsz-sm c-grey-900">John Doe</span>
@@ -193,26 +184,26 @@ return (
               </a>
               <ul className="dropdown-menu fsz-sm">
                 <li>
-                  <a href className="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
+                  <a className="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
                     <i className="ti-settings mR-10" />
                     <span>Setting</span>
                   </a>
                 </li>
                 <li>
-                  <a href className="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
+                  <a className="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
                     <i className="ti-user mR-10" />
                     <span>Profile</span>
                   </a>
                 </li>
                 <li>
-                  <a href="email.html" className="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
+                  <a className="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
                     <i className="ti-email mR-10" />
                     <span>Messages</span>
                   </a>
                 </li>
                 <li role="separator" className="divider" />
                 <li>
-                  <a href className="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
+                  <a className="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
                     <i className="ti-power-off mR-10" />
                     <span>Logout</span>
                   </a>

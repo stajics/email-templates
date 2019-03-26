@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class MenuDrawer extends Component {
   render() {
@@ -7,36 +8,36 @@ class MenuDrawer extends Component {
    <div className="sidebar-inner">
      <ul className="sidebar-menu scrollable pos-r">
        <li className="nav-item mT-30 active">
-         <a className="sidebar-link" href="index.html">
+         <Link className="sidebar-link" to="/">
            <span className="icon-holder">
              <i className="c-blue-500 ti-home" />
            </span>
            <span className="title">Dashboard</span>
-         </a>
+         </Link>
        </li>
        <li className="nav-item">
-         <a className="sidebar-link" href="connections.html">
+         <Link className="sidebar-link" to="/connections/">
            <span className="icon-holder">
              <i className="c-brown-500 ti-settings" />
            </span>
            <span className="title">Connections</span>
-         </a>
+         </Link>
        </li>
        <li className="nav-item">
-         <a className="sidebar-link" href="emailtemplates.html">
+         <Link className="sidebar-link" to="/email-templates/">
            <span className="icon-holder">
              <i className="c-blue-500 ti-share" />
            </span>
            <span className="title">Email templates</span>
-         </a>
+         </Link>
        </li>
        <li className="nav-item">
-         <a className="sidebar-link" href="emailstats.html">
+         <Link className="sidebar-link" to="/email-stats/">
            <span className="icon-holder">
              <i className="c-deep-orange-500 ti-stats-up" />
            </span>
            <span className="title">Email stats</span>
-         </a>
+         </Link>
        </li>
      </ul>
    </div>

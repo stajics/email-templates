@@ -1,0 +1,12 @@
+import React, { Component } from 'react';
+
+class HeaderContentComponent extends Component {
+  render() {
+    return
+      <div className="page-container">
+       <main className="main-content bgc-grey-100">
+         <div id="mainContent">
+}
+}
+
+export default HeaderContentComponent;
