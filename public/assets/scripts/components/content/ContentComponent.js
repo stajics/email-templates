@@ -10,9 +10,9 @@ class ContentComponent extends Component {
     return (
     <div>
              <Route path="/" exact           component={DashboardComponent} />
-             <Route path="/connections/"     component={ConnectionsComponent} />
-             <Route path="/email-templates/" component={EmailTemplatesComponent} />
-             <Route path="/email-stats/"     component={EmailStatsComponent} />
+             <Route path="/connections/" exact    component={ConnectionsComponent} />
+             <Route path="/email-templates/" exact component={EmailTemplatesComponent} />
+             <Route path="/email-stats/" exact component={EmailStatsComponent} />
      </div>
    );
 }

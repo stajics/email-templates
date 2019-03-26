@@ -25,6 +25,7 @@ const titles = {
   '404': '404',
   '500': '500',
   'basic-table': 'Basic Table',
+  'forgotPass': 'Forgot',
   'testComponent': 'TestComponent'
 };
 

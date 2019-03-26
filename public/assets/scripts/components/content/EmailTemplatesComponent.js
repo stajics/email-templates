@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import PerfectScrollbar from 'react-perfect-scrollbar'
 
 class EmailTemplatesComponent extends Component {
+
+
   render() {
+      const divStyle={
+              overflowY: 'scroll',
+              border:'1px solid red'
+            };
+
     return (
       <main className="main-content bgc-grey-100">
         <div id="mainContent">
@@ -32,9 +40,11 @@ class EmailTemplatesComponent extends Component {
                   </div>
                 </div>
               </div>
+
+              <PerfectScrollbar>
               <div className="email-wrapper row remain-height bgc-white ov-h">
                 <div className="email-content h-100">
-                  <div className="h-100 scrollable pos-r">
+                  <div className="h-100 scrollable pos-r" style={divStyle}>
                     <div className="bgc-grey-100 peers ai-c jc-sb p-20 fxw-nw d-n@md+">
                       <div className="peer">
                         <div className="btn-group" role="group">
@@ -124,11 +134,63 @@ class EmailTemplatesComponent extends Component {
                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </p>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              </PerfectScrollbar>
             </div>
           </div>
         </div>
