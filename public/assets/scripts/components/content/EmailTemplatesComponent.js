@@ -7,8 +7,7 @@ class EmailTemplatesComponent extends Component {
 
   render() {
       const divStyle={
-              overflowY: 'scroll',
-              border:'1px solid red'
+              overflowY: 'scroll'
             };
 
     return (
@@ -19,15 +18,9 @@ class EmailTemplatesComponent extends Component {
               <div className="email-side-nav remain-height ov-h">
                 <div className="h-100 layers">
                   <div className="p-20 bgc-grey-100 layer w-100">
-
-                  <div class="mT-30">
-                  <button type="button" className="btn btn-danger btn-block" data-toggle="modal" data-target="#exampleModal">
-                   New email template
-                  </button>
+                    <Link className="btn btn-danger btn-block" to="/new-email-template/">New Email Template</Link>
                   </div>
-
-                  </div>
-                  <div className="scrollable pos-r bdT layer w-100 fxg-1" style={this.divStyle}>
+                  <div className="scrollable pos-r bdT layer w-100 fxg-1" style={divStyle}>
                     <ul className="p-20 nav flex-column">
                       <li className="nav-item">
 
@@ -47,10 +40,10 @@ class EmailTemplatesComponent extends Component {
                 </div>
               </div>
 
-
+              <PerfectScrollbar>
               <div className="email-wrapper row remain-height bgc-white ov-h">
                 <div className="email-content h-100">
-                  <div className="h-100 scrollable pos-r" style={this.divStyle}>
+                  <div className="h-100 scrollable pos-r" style={divStyle}>
                     <div className="bgc-grey-100 peers ai-c jc-sb p-20 fxw-nw d-n@md+">
                       <div className="peer">
                         <div className="btn-group" role="group">
@@ -196,6 +189,7 @@ class EmailTemplatesComponent extends Component {
                   </div>
                 </div>
               </div>
+              </PerfectScrollbar>
             </div>
           </div>
         </div>
