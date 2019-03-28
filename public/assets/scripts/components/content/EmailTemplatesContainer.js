@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import PerfectScrollbar from 'react-perfect-scrollbar'
 import { connect } from 'react-redux';
+import { compose } from 'redux';
 import { find } from 'lodash';
 
-const EmailTemplateListItem = ({ noOfEmailsSent, id }) => (
+const EmailTemplateListItem = ({ noOfEmailsSent, id, onSelectTemplate }) => (
   <li className="nav-item">
 
-  <Link className="nav-link c-grey-800 cH-blue-500 active" to="/connections/">
+  <div className="nav-link c-grey-800 cH-blue-500 active" onClick={onSelectTemplate}>
     <div className="peers ai-c jc-sb">
       <div className="peer peer-greed">
         <span>{id}</span>
@@ -16,11 +17,11 @@ const EmailTemplateListItem = ({ noOfEmailsSent, id }) => (
         <span className="badge badge-pill bgc-deep-purple-50 c-deep-purple-700">{noOfEmailsSent} sent</span>
       </div>
     </div>
-  </Link>
+  </div>
   </li>
 )
 
-const EmailTemplateList = ({ templates }) => (
+const EmailTemplateList = ({ templates, onSelectTemplate }) => (
   <div className="email-side-nav remain-height ov-h">
     <div className="h-100 layers">
       <div className="p-20 bgc-grey-100 layer w-100">
@@ -30,7 +31,8 @@ const EmailTemplateList = ({ templates }) => (
         <ul className="p-20 nav flex-column">
           {
             templates.map(template => (
-              <EmailTemplateListItem 
+              <EmailTemplateListItem
+                onSelectTemplate={() => onSelectTemplate(template.id)}
                 key={template.id} 
                 noOfEmailsSent={template.noOfEmailsSent}
                 id={template.id}
@@ -141,13 +143,13 @@ class EmailTemplatesContainer extends Component {
 
 
   render() {
-    const { templates, selectedTemplate } = this.props;
+    const { templates, selectedTemplate, selectTemplate } = this.props;
     return (
       <main className="main-content bgc-grey-100">
         <div id="mainContent">
           <div className="full-container">
             <div className="email-app">
-              <EmailTemplateList templates={templates} />
+              <EmailTemplateList templates={templates} onSelectTemplate={selectTemplate} />
               <PerfectScrollbar>
                 {
                   selectedTemplate &&
@@ -174,4 +176,14 @@ const mapStateToProps = state => ({
   selectedTemplate: find(state.emailTemplates.templates, template => template.id === state.emailTemplates.selectedTemplateId),
 });
 
-export default connect(mapStateToProps, null)(EmailTemplatesContainer);
+const mapDispatchToProps = dispatch => ({
+  selectTemplate: templateId => dispatch({
+    type: 'SELECT_TEMPLATE',
+    payload: {
+      templateId,
+    },
+  }),
+  dispatch,
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(EmailTemplatesContainer);
