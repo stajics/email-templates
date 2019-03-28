@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   isLoggedIn() {
-    return false;
+    return true;
   }
 
   renderLoggedIn() {
